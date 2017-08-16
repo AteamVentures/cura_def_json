@@ -32,5 +32,13 @@
   </nav>
 
   <h1>Work in progress...</h1>
+  <div id='fileNames'></div>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.get(".", function(data) {
+        $("#fileNames").append(data);
+      });
+    })
+  </script>
 </body>
 </html>
