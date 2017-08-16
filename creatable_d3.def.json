@@ -1,0 +1,49 @@
+{
+    "id": "creatable_d3",
+    "version": 1,
+    "name": "CREATABLE D3",
+    "inherits": "fdmprinter",
+    "metadata": {
+        "visible": true,
+        "author": "Joseph Choi",
+        "manufacturer": "CREATABLE LABS",
+        "category": "Other",
+        "file_formats": "text/x-gcode"
+    },
+    "overrides": {
+        "machine_heated_bed": {
+            "default_value": true
+        },
+        "machine_width": {
+            "default_value": 250
+        },
+        "machine_height": {
+            "default_value": 200
+        },
+        "machine_depth": {
+            "default_value": 250
+        },
+        "machine_center_is_zero": {
+            "default_value": true
+        },
+        "machine_nozzle_size": {
+            "default_value": 0.4
+        },
+        "material_diameter": {
+            "default_value": 1.75
+        },
+        "machine_gcode_flavor": {
+            "default_value": "RepRap (Marlin/Sprinter)"
+        },
+        "machine_start_gcode": {
+            "default_value": "G21 ; metric values\nG90 ; absolute positioning\nM82 ; set extruder to absolute mode\nM106 S255 ; start with the fan on\nG28 ; Go Home\nG92 E0 ; set extruder position to 0\nG1 Z100 F5000\nM190 S70 ; get bed heating up and wait\nM109 S200 ; set extruder temp and wait\nG1 X-135\nG1 Z0.3\nG92 E-32\nG1 E0 F400\nG1 E20 F200\nG1 F1000\nG1 X-125\nG92 E0\n"
+        },
+        "machine_end_gcode": {
+            "default_value": "M400\nG28\nM104 S0 ; hotend off\nM140 S0 ; heated bed heater off (if you have it)\nM107 ; fans off\nG92 E0 ; set extruder to 0\nG1 E-32 F300 ; retract a bit to relieve pressure\nM84 ; steppers off\nG90 ; absolute positioning"
+        },
+        "machine_shape": {
+            "default_value": "elliptic"
+        }
+    }
+}
+
