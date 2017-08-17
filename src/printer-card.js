@@ -39,6 +39,29 @@ import jsonPrusaI3 from './definitions/prusa_i3.def.json';
 import jsonPrusaI3Mk2 from './definitions/prusa_i3_mk2.def.json';
 import jsonPrusaI3Xl from './definitions/prusa_i3_xl.def.json';
 import jsonPunchtecConnectXl from './definitions/punchtec_connect_xl.def.json';
+import jsonRenkforceRf100 from './definitions/renkforce_rf100.def.json';
+import jsonRigid3d from './definitions/rigid3d.def.json';
+import jsonRigid3d3rdgen from './definitions/rigid3d_3rdgen.def.json';
+import jsonRigid3dHobby from './definitions/rigid3d_hobby.def.json';
+import jsonRigid3dZero from './definitions/rigid3d_zero.def.json';
+import jsonRigidbotBig from './definitions/rigidbot_big.def.json';
+import jsonRigidbot from './definitions/rigidbot.def.json';
+import jsonRobo3dR1 from './definitions/robo_3d_r1.def.json';
+import jsonUltimakerOriginalDual from './definitions/ultimaker_original_dual.def.json';
+import jsonUltimakerOriginalPlus from './definitions/ultimaker_original_plus.def.json';
+import jsonUltimakerOriginal from './definitions/ultimaker_original.def.json';
+import jsonUltimaker from './definitions/ultimaker.def.json';
+import jsonUltimaker2ExtendedPlus from './definitions/ultimaker2_extended_plus.def.json';
+import jsonUltimaker2Extended from './definitions/ultimaker2_extended.def.json';
+import jsonUltimaker2Go from './definitions/ultimaker2_go.def.json';
+import jsonUltimaker2Plus from './definitions/ultimaker2_plus.def.json';
+import jsonUltimaker2 from './definitions/ultimaker2.def.json';
+import jsonUltimaker3Extended from './definitions/ultimaker3_extended.def.json';
+import jsonUltimaker3 from './definitions/ultimaker3.def.json';
+import jsonUniqbotOne from './definitions/uniqbot_one.def.json';
+import jsonVertexK8400Dual from './definitions/vertex_k8400_dual.def.json';
+import jsonVertexK8400 from './definitions/vertex_k8400.def.json';
+import jsonZone3d from './definitions/zone3d_printer.def.json';
 
 export default class PrinterCard extends Component {
   renderJson(definition) {
@@ -82,7 +105,30 @@ export default class PrinterCard extends Component {
       'prusa_i3.def.json': jsonPrusaI3,
       'prusa_i3_mk2.def.json': jsonPrusaI3Mk2,
       'prusa_i3_xl.def.json': jsonPrusaI3Xl,
-      'punchtec_connect_xl.def.json': jsonPunchtecConnectXl
+      'punchtec_connect_xl.def.json': jsonPunchtecConnectXl,
+      'renkforce_rf100.def.json': jsonRenkforceRf100,
+      'rigid3d.def.json': jsonRigid3d,
+      'rigid3d_3rdgen.def.json': jsonRigid3d3rdgen,
+      'rigid3d_hobby.def.json': jsonRigid3dHobby,
+      'rigid3d_zero.def.json': jsonRigid3dZero,
+      'rigidbot_big.def.json': jsonRigidbotBig,
+      'rigidbot.def.json': jsonRigidbot,
+      'robo_3d_r1.def.json': jsonRobo3dR1,
+      'ultimaker_original_dual.def.json': jsonUltimakerOriginalDual,
+      'ultimaker_original_plus.def.json': jsonUltimakerOriginalPlus,
+      'ultimaker_original.def.json': jsonUltimakerOriginal,
+      'ultimaker.def.json': jsonUltimaker,
+      'ultimaker2_extended_plus.def.json': jsonUltimaker2ExtendedPlus,
+      'ultimaker2_extended.def.json': jsonUltimaker2Extended,
+      'ultimaker2_go.def.json': jsonUltimaker2Go,
+      'ultimaker2_plus.def.json': jsonUltimaker2Plus,
+      'ultimaker2.def.json': jsonUltimaker2,
+      'ultimaker3_extended.def.json': jsonUltimaker3Extended,
+      'ultimaker3.def.json': jsonUltimaker3,
+      'uniqbot_one.def.json': jsonUniqbotOne,
+      'vertex_k8400_dual.def.json': jsonVertexK8400Dual,
+      'vertex_k8400.def.json': jsonVertexK8400,
+      'zone3d_printer.def.json': jsonZone3d
     };
     return jsonDict[definition];
   }

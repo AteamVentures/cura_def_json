@@ -324,6 +324,190 @@ export default class PrinterCards extends Component {
         image: 'https://i.ytimg.com/vi/nZQDIemPNDg/maxresdefault.jpg',
         alt: 'punchtec-connect-xl',
         definition: 'punchtec_connect_xl.def.json'
+      },
+      {
+        name: 'Renkforce RF100',
+        description: 'The RF 100 is shipped as a completely assembled unit with everything you need to get started included in delivery. The RF100 offers the flexibility to be controlled with the included software by your PC or using the integrated LCD display. Printing can be done with a PC/Laptop connected to the unit or simply direct from the SD card without any cables needed.',
+        link: 'http://www.conrad.com/ce/en/product/1507428/Renkforce-RF100-3D-printer-incl-filament',
+        image: 'https://i.ytimg.com/vi/mPojYyv3K9I/maxresdefault.jpg',
+        alt: 'renkforce-rf-100',
+        definition: 'renkforce_rf100.def.json'
+      },
+      {
+        name: 'Rigid3D',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'rigid3d',
+        definition: 'rigid3d.def.json'
+      },
+      {
+        name: 'Rigid3D 3rd Gen',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'rigid3d-3rdgen',
+        definition: 'rigid3d_3rdgen.def.json'
+      },
+      {
+        name: 'Rigid3D Hobby',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'rigid3d-hobby',
+        definition: 'rigid3d_hobby.def.json'
+      },
+      {
+        name: 'Rigid3D Zero',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'rigid3d-zero',
+        definition: 'rigid3d_zero.def.json'
+      },
+      {
+        name: 'Rigidbot',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'http://i.imgur.com/qmUP2zg.jpg',
+        alt: 'rigidbot',
+        definition: 'rigidbot.def.json'
+      },
+      {
+        name: 'Rigidbot Big',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://thingiverse-production-new.s3.amazonaws.com/renders/4f/89/9c/e3/7e/20150417_021826343_iOS_preview_featured.jpg',
+        alt: 'rigidbot-big',
+        definition: 'rigidbot_big.def.json'
+      },
+      {
+        name: 'Robo3D R1',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://robo3d.com/wp-content/uploads/2015/12/14-08-07_Robo3D_Product_shots.jpg',
+        alt: 'robo-3d-r1',
+        definition: 'robo_3d_r1.def.json'
+      },
+      {
+        name: 'Ultimaker',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://www.dream3d.co.uk/wp-content/uploads/2014/10/Dual-Extrusion-2.png',
+        alt: 'ultimaker',
+        definition: 'ultimaker.def.json'
+      },
+      {
+        name: 'Ultimaker Original',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://d3v5bfco3dani2.cloudfront.net/photo/image/1300x0/570fbd94873d9/1My-little-workshop-175-umo-neotko05.jpg',
+        alt: 'ultimaker-original',
+        definition: 'ultimaker_original.def.json'
+      },
+      {
+        name: 'Ultimaker Original Plus',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://static.webshopapp.com/shops/024440/files/015229105/800x600x2/ultimaker-original-diy-kit.jpg',
+        alt: 'ultimaker-original-plus',
+        definition: 'ultimaker_original_plus.def.json'
+      },
+      {
+        name: 'Ultimaker Original Dual',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://s3.amazonaws.com/app-cdn.ultimaker.com/videos/Images/UM2Go/Unboxing-4.jpg',
+        alt: 'ultimaker_original_dual',
+        definition: 'ultimaker_original_dual.def.json'
+      },
+      {
+        name: 'Ultimaker 2',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'ultimaker-2',
+        definition: 'ultimaker2.def.json'
+      },
+      {
+        name: 'Ultimaker 2 Go',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://d3v5bfco3dani2.cloudfront.net/img/ultimaker_2go/videos/Ultimaker-2-Go-colorful-3D-prints@2x.jpg',
+        alt: 'ultimaker-2-go',
+        definition: 'ultimaker2_go.def.json'
+      },
+      {
+        name: 'Ultimaker 2 Plus',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://ultimaker.com/photo/topic/0x0/561f7f5b6327a/ultimaker-2-3d-printer-family-release.jpg',
+        alt: 'ultimaker-2-plus',
+        definition: 'ultimaker2_plus.def.json'
+      },
+      {
+        name: 'Ultimaker 2 Extended',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'http://pic.pimg.tw/printer3d/1420618705-684779646.png',
+        alt: 'ultimaker-2-extended',
+        definition: 'ultimaker2_extended.def.json'
+      },
+      {
+        name: 'Ultimaker 2 Extended Plus',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/Sz77Tq9xzpM/hqdefault.jpg',
+        alt: 'ultimaker-2-extended-plus',
+        definition: 'ultimaker2_extended_plus.def.json'
+      },
+      {
+        name: 'Ultimaker 3',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://d3v5bfco3dani2.cloudfront.net/photo/topic/1920x1080/5804d6818123d/Ultimaker_3_Release.jpg',
+        alt: 'ultimaker-3',
+        definition: 'ultimaker3.def.json'
+      },
+      {
+        name: 'Ultimaker 3 Extended',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://i.ytimg.com/vi/mq9X1s7QLdQ/maxresdefault.jpg',
+        alt: 'ultimaker-3-extended',
+        definition: 'ultimaker3_extended.def.json'
+      },
+      {
+        name: 'Uniqbot One',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://static1.squarespace.com/static/509c281de4b0cd18c7335aab/t/568899541c1210fead03c563/1451792725399/',
+        alt: 'uniqbot-one',
+        definition: 'uniqbot_one.def.json'
+      },
+      {
+        name: 'Vertex K8400',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://algorithmicart.files.wordpress.com/2014/11/2014-09-09-15-10-50nikon-corporation-nikon-d3000-3872x2592.jpeg',
+        alt: 'vertex-k8400',
+        definition: 'vertex_k8400.def.json'
+      },
+      {
+        name: 'Vertex K8400 Dual',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'https://www.gotronic.fr/ori-imprimante-3d-en-kit-vertex-k8400-21928_2801.jpg',
+        alt: 'vertex-k8400-dual',
+        definition: 'vertex_k8400_dual.def.json'
+      },
+      {
+        name: 'Zone3D',
+        description: '',
+        link: 'http://www.rigid3d.com/',
+        image: 'http://remotely-interested.com/wp-content/uploads/2014/03/ces3d-print.jpg',
+        alt: 'zone3d',
+        definition: 'zone3d_printer.def.json'
       }
     ];
 
