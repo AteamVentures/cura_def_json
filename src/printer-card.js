@@ -33,6 +33,12 @@ import jsonMendel90 from './definitions/mendel90.def.json';
 import jsonOrd from './definitions/ord.def.json';
 import jsonPrintrbotPlay from './definitions/printrbot_play.def.json';
 import jsonPrintrbotPlayHeated from './definitions/printrbot_play_heated.def.json';
+import jsonPrintrbotSimple from './definitions/printrbot_simple.def.json';
+import jsonPrintrbotSimpleExtended from './definitions/printrbot_simple_extended.def.json';
+import jsonPrusaI3 from './definitions/prusa_i3.def.json';
+import jsonPrusaI3Mk2 from './definitions/prusa_i3_mk2.def.json';
+import jsonPrusaI3Xl from './definitions/prusa_i3_xl.def.json';
+import jsonPunchtecConnectXl from './definitions/punchtec_connect_xl.def.json';
 
 export default class PrinterCard extends Component {
   renderJson(definition) {
@@ -70,7 +76,13 @@ export default class PrinterCard extends Component {
       'mendel90.def.json': jsonMendel90,
       'ord.def.json': jsonOrd,
       'printrbot_play.def.json': jsonPrintrbotPlay,
-      'printrbot_play_heated.def.json': jsonPrintrbotPlayHeated
+      'printrbot_play_heated.def.json': jsonPrintrbotPlayHeated,
+      'printrbot_simple.def.json': jsonPrintrbotSimple,
+      'printrbot_simple_extended.def.json': jsonPrintrbotSimpleExtended,
+      'prusa_i3.def.json': jsonPrusaI3,
+      'prusa_i3_mk2.def.json': jsonPrusaI3Mk2,
+      'prusa_i3_xl.def.json': jsonPrusaI3Xl,
+      'punchtec_connect_xl.def.json': jsonPunchtecConnectXl
     };
     return jsonDict[definition];
   }

@@ -276,6 +276,54 @@ export default class PrinterCards extends Component {
         image: 'https://all3dp.com/app/uploads/2015/11/printrbot_play_design-1024x576.jpg',
         alt: 'printrbot-play-heated',
         definition: 'printrbot_play_heated.def.json'
+      },
+      {
+        name: 'Printrbot Simple',
+        description: 'Introducing our most affordable 3D printer yet – the Printrbot Play. Now you can afford to own a 3D printer for work. ..or play. The Play features a 4 x 4 x 5 inches build area, metal construction, and a cover over the hot end to protect curious hands from getting burned. Its a smart choice for the home or classroom.',
+        link: 'https://printrbot.com/shop/simple-v2/',
+        image: 'https://cdn.instructables.com/F5J/I1M3/HQ1E9BEZ/F5JI1M3HQ1E9BEZ.MEDIUM.jpg',
+        alt: 'printrbot-simple',
+        definition: 'printrbot_simple.def.json'
+      },
+      {
+        name: 'Printrbot Simple Extended',
+        description: 'Introducing our most affordable 3D printer yet – the Printrbot Play. Now you can afford to own a 3D printer for work. ..or play. The Play features a 4 x 4 x 5 inches build area, metal construction, and a cover over the hot end to protect curious hands from getting burned. Its a smart choice for the home or classroom.',
+        link: 'https://www.indiegogo.com/projects/printrbot-simple-xl-extended-heated-bed#/',
+        image: 'https://i.ytimg.com/vi/jknl5ULOzJw/maxresdefault.jpg',
+        alt: 'printrbot-simple-extended',
+        definition: 'printrbot_simple_extended.def.json'
+      },
+      {
+        name: 'Prusa i3',
+        description: 'Prusa i3 (i3 stands for third iteration of the design) is the latest design by me. There are countless variations of the design and it became a staple of 3D printing with tens, if not hundreds, of thousands units world wide. You can build simple one for couple hundred dollars or you can chip in more and get the state of the art 3D printer, its all up to you.',
+        link: 'http://www.prusaprinters.org/prusa-i3/',
+        image: 'https://3dprinting4u.files.wordpress.com/2013/04/dscn8567.jpg',
+        alt: 'prusa-i3',
+        definition: 'prusa_i3.def.json'
+      },
+      {
+        name: 'Prusa i3 MK2',
+        description: 'Prusa i3 is a proven design with tens of thousands users all around the planet. Now you have a great opportunity to buy one directly from the author Josef Průša and support its further development. All parts of this 3D printer are Open Source and are part of the RepRap project.',
+        link: 'http://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html?gclid=EAIaIQobChMIo-bKkOfd1QIVjgMqCh1q5gbjEAAYASAAEgIULfD_BwE',
+        image: 'https://all3dp.com/app/uploads/2016/09/prusaheroii.jpg',
+        alt: 'prusa-i3-mk2',
+        definition: 'prusa_i3_mk2.def.json'
+      },
+      {
+        name: 'Prusa i3 XL',
+        description: 'Prusa i3 is a proven design with tens of thousands users all around the planet. Now you have a great opportunity to buy one directly from the author Josef Průša and support its further development. All parts of this 3D printer are Open Source and are part of the RepRap project.',
+        link: 'http://shop.prusa3d.com/forum/prusa-i3-kit-building-calibrating-first-print-main-f6/prusa-i3-xl-t4373.html',
+        image: 'http://centrumdruku3d.pl/wp-content/uploads/2015/07/Jelwek.jpg',
+        alt: 'prusa-i3-xl',
+        definition: 'prusa_i3_xl.def.json'
+      },
+      {
+        name: 'Punchtec Connect XL',
+        description: '',
+        link: 'http://3dprintingdatabase.org/en/3dprinter/connect-xl',
+        image: 'https://i.ytimg.com/vi/nZQDIemPNDg/maxresdefault.jpg',
+        alt: 'punchtec-connect-xl',
+        definition: 'punchtec_connect_xl.def.json'
       }
     ];
 
