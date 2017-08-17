@@ -11,6 +11,12 @@ read comment
 echo -e "${GREEN}commit comment has been loaded${NC}"
 # just a spacer
 echo -e "${LIGHTCYAN}............${NC}"
+
+echo -e "${GREEN}npm run deploy started${NC}"
+npm run deploy
+echo -e "${GREEN}npm run deploy completed${NC}"
+echo -e "${LIGHTCYAN}............${NC}"
+
 echo -e "${GREEN}git add . started${NC}"
 git add .
 echo -e "${GREEN}git add . completed${NC}"
@@ -22,9 +28,5 @@ echo -e "${LIGHTCYAN}............${NC}"
 echo -e "${GREEN}git push started${NC}"
 git push
 echo -e "${GREEN}git push completed${NC}"
-echo -e "${LIGHTCYAN}............${NC}"
-echo -e "${GREEN}npm run deploy started${NC}"
-npm run deploy
-echo -e "${GREEN}npm run deploy completed${NC}"
 echo -e "${LIGHTCYAN}............${NC}"
 echo -e "${GREEN}deployment complete!${NC}"
