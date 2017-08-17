@@ -43,7 +43,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.3dsystems.com/shop/support/legacy/manuals?redirectFrom=cubify',
         image: 'https://static.squarespace.com/static/509c281de4b0cd18c7335aab/52f58444e4b0cdc9d87888d0/52f58448e4b0cdc9d878ac8e/1304198033043/1000w/bfb3000%20out%20of%20box.jpg',
         alt: 'bfb-3000',
-        definition: '101Hero.def.json'
+        definition: 'bfb.def.json'
       },
       {
         name: 'BQ Hephestos',
@@ -51,7 +51,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.bq.com/en/hephestos-prusa',
         image: 'http://reprap.org/mediawiki/images/thumb/6/68/Hephestos_3_Colores_1024x683.jpg/800px-Hephestos_3_Colores_1024x683.jpg',
         alt: 'bq-hephestos',
-        definition: '101Hero.def.json'
+        definition: 'bq_hephestos.def.json'
       },
       {
         name: 'BQ Hephestos 2',
@@ -59,7 +59,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.bq.com/en/hephestos-2',
         image: 'http://3.bp.blogspot.com/-UtqnSWZyPAk/Vp6WYEnCXeI/AAAAAAAAH3g/rY9PSy0r6hM/w1200-h630-p-k-no-nu/3D%2BPrinter%2BBQ%2BHephestos%2B2.jpeg',
         alt: 'bq-hephestos-2',
-        definition: '101Hero.def.json'
+        definition: 'bq_hephestos_2.def.json'
       },
       {
         name: 'BQ Hephestos XL',
@@ -67,7 +67,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.bq.com/en/hephestos-prusa',
         image: 'http://reprap.org/mediawiki/images/thumb/6/68/Hephestos_3_Colores_1024x683.jpg/800px-Hephestos_3_Colores_1024x683.jpg',
         alt: 'bq-hephestos-xl',
-        definition: '101Hero.def.json'
+        definition: 'bq_hephestos_xl.def.json'
       },
       {
         name: 'BQ Witbox',
@@ -75,7 +75,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.3dhubs.com/3d-printers/witbox',
         image: 'https://www.3dhubs.com/s3fs-public/talk/attachments/witbox.jpg',
         alt: 'bq-witbox',
-        definition: '101Hero.def.json'
+        definition: 'bq_witbox.def.json'
       },
       {
         name: 'BQ Witbox 2',
@@ -83,7 +83,7 @@ export default class PrinterCards extends Component {
         link: 'https://www.bq.com/en/witbox-2',
         image: 'https://www.allthat3d.com/wp-content/uploads/2016/08/maxresdefault.jpg',
         alt: 'bq-witbox-2',
-        definition: '101Hero.def.json'
+        definition: 'bq_witbox_2.def.json'
       }
     ];
 
