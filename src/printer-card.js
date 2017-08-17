@@ -9,6 +9,30 @@ import jsonBqHephestos2 from './definitions/bq_hephestos_2.def.json';
 import jsonBqHephestosXl from './definitions/bq_hephestos_xl.def.json';
 import jsonBqWitbox from './definitions/bq_witbox.def.json';
 import jsonBqWitbox2 from './definitions/bq_witbox_2.def.json';
+import jsonCartesio from './definitions/cartesio.def.json';
+import jsonCreatableD3 from './definitions/creatable_d3.def.json';
+import jsonCustom from './definitions/custom.def.json';
+import jsonDeltaGo from './definitions/delta_go.def.json';
+import jsonDeltabot from './definitions/deltabot.def.json';
+import jsonFdmextruder from './definitions/fdmextruder.def.json';
+import jsonFdmprinter from './definitions/fdmprinter.def.json';
+import jsonFolgertechFt5 from './definitions/folgertech_FT-5.def.json';
+import jsonGrrNeo from './definitions/grr_neo.def.json';
+import jsonHelloBeePrusa from './definitions/helloBEEprusa.def.json';
+import jsonInnovoInventor from './definitions/innovo_inventor.def.json';
+import jsonJellybox from './definitions/jellybox.def.json';
+import jsonJulia from './definitions/julia.def.json';
+import jsonKosselMini from './definitions/kossel_mini.def.json';
+import jsonKosselPro from './definitions/kossel_pro.def.json';
+import jsonKupido from './definitions/kupido.def.json';
+import jsonM180 from './definitions/m180.def.json';
+import jsonMakerStarter from './definitions/maker_starter.def.json';
+import jsonMakerbotReplicator from './definitions/makerbotreplicator.def.json';
+import jsonMankatiFullscaleXtPlus from './definitions/mankati_fullscale_xt_plus.def.json';
+import jsonMendel90 from './definitions/mendel90.def.json';
+import jsonOrd from './definitions/ord.def.json';
+import jsonPrintrbotPlay from './definitions/printrbot_play.def.json';
+import jsonPrintrbotPlayHeated from './definitions/printrbot_play_heated.def.json';
 
 export default class PrinterCard extends Component {
   renderJson(definition) {
@@ -22,14 +46,38 @@ export default class PrinterCard extends Component {
       'bq_hephestos_2.def.json': jsonBqHephestos2,
       'bq_hephestos_xl.def.json': jsonBqHephestosXl,
       'bq_witbox.def.json': jsonBqWitbox,
-      'bq_witbox_2.def.json': jsonBqWitbox2
+      'bq_witbox_2.def.json': jsonBqWitbox2,
+      'cartesio.def.json': jsonCartesio,
+      'creatable_d3.def.json': jsonCreatableD3,
+      'custom.def.json': jsonCustom,
+      'delta_go.def.json': jsonDeltaGo,
+      'deltabot.def.json': jsonDeltabot,
+      'fdmextruder.def.json': jsonFdmextruder,
+      'fdmprinter.def.json': jsonFdmprinter,
+      'folgertech_FT-5.def.json': jsonFolgertechFt5,
+      'grr_neo.def.json': jsonGrrNeo,
+      'helloBEEprusa.def.json': jsonHelloBeePrusa,
+      'innovo_inventor.def.json': jsonInnovoInventor,
+      'jellybox.def.json': jsonJellybox,
+      'julia.def.json': jsonJulia,
+      'kossel_mini.def.json': jsonKosselMini,
+      'kossel_pro.def.json': jsonKosselPro,
+      'kupido.def.json': jsonKupido,
+      'm180.def.json': jsonM180,
+      'maker_starter.def.json': jsonMakerStarter,
+      'makerbotreplicator.def.json': jsonMakerbotReplicator,
+      'mankati_fullscale_xt_plus.def.json': jsonMankatiFullscaleXtPlus,
+      'mendel90.def.json': jsonMendel90,
+      'ord.def.json': jsonOrd,
+      'printrbot_play.def.json': jsonPrintrbotPlay,
+      'printrbot_play_heated.def.json': jsonPrintrbotPlayHeated
     };
     return jsonDict[definition];
   }
 
   renderJsonTableRow(attributeName, attributeValue) {
     return (
-      <tr key={attributeName + attributeValue}>
+      <tr key={(Math.random()).toString()}>
         <td className="blue-text text-darken-2">{attributeName}</td>
         <td>{attributeValue}</td>
       </tr>
@@ -41,12 +89,16 @@ export default class PrinterCard extends Component {
       if (defJson.hasOwnProperty(key)) {
         if (typeof defJson[key] === 'object') {
           if (key === "default_value") {
-            tableRows.push(this.renderJsonTableRow(keyPrefix + key, defJson[key].toString()));
+            tableRows.push(this.renderJsonTableRow(keyPrefix, defJson[key].toString()));
             break;
           }
           this.traverseJson(tableRows, defJson[key], key + ' ');
         } else {
-          tableRows.push(this.renderJsonTableRow(keyPrefix + key, defJson[key].toString()));
+          if (key === "default_value") {
+            tableRows.push(this.renderJsonTableRow(keyPrefix, defJson[key].toString()));
+          } else {
+            tableRows.push(this.renderJsonTableRow(keyPrefix + key, defJson[key].toString()));
+          }
         }
       }
     }

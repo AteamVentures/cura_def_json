@@ -5,14 +5,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav className="teal lighten-1">
+        <nav className="blue">
           <div className="nav-wrapper">
-            <a href="#" className="brand-logo center">Waggle Supported Printers</a>
+            <a href="" className="brand-logo center white-text">CuraEngine Supported</a>
           </div>
         </nav>
-
         <PrinterCards />
-
       </div>
     );
   }
