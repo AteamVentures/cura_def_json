@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/AteamVentures/cura_def_json"
+  "homepage": "https://ateamventures.github.io/cura_def_json"
 }
