@@ -41,11 +41,39 @@ export default class PrinterCards extends Component {
         alt: 'bfb-3000'
       },
       {
+        name: 'BQ Hephestos',
+        description: 'Hephestos is an evolution of the Prusa i3, the most popular 3D printer in the RepRap community. It incorporates significant improvements and a more practical and intuitive DIY (Do it yourself) assembly kit.',
+        link: 'https://www.bq.com/en/hephestos-prusa',
+        image: 'http://reprap.org/mediawiki/images/thumb/6/68/Hephestos_3_Colores_1024x683.jpg/800px-Hephestos_3_Colores_1024x683.jpg',
+        alt: 'bq-hephestos'
+      },
+      {
         name: 'BQ Hephestos 2',
         description: 'Hephestos 2 is our second DIY (Do it yourself) printer. Hephestos is based on the Prusa i3, one of the most popular models in the RepRap community.',
         link: 'https://www.bq.com/en/hephestos-2',
-        image: 'https://static.squarespace.com/static/509c281de4b0cd18c7335aab/52f58444e4b0cdc9d87888d0/52f58448e4b0cdc9d878ac8e/1304198033043/1000w/bfb3000%20out%20of%20box.jpg',
-        alt: 'bfb-3000'
+        image: 'http://3.bp.blogspot.com/-UtqnSWZyPAk/Vp6WYEnCXeI/AAAAAAAAH3g/rY9PSy0r6hM/w1200-h630-p-k-no-nu/3D%2BPrinter%2BBQ%2BHephestos%2B2.jpeg',
+        alt: 'bq-hephestos-2'
+      },
+      {
+        name: 'BQ Hephestos XL',
+        description: 'Hephestos is an evolution of the Prusa i3, the most popular 3D printer in the RepRap community. It incorporates significant improvements and a more practical and intuitive DIY (Do it yourself) assembly kit.',
+        link: 'https://www.bq.com/en/hephestos-prusa',
+        image: 'http://reprap.org/mediawiki/images/thumb/6/68/Hephestos_3_Colores_1024x683.jpg/800px-Hephestos_3_Colores_1024x683.jpg',
+        alt: 'bq-hephestos-xl'
+      },
+      {
+        name: 'BQ Witbox',
+        description: 'This Spanish 3D printer has a reinforced chassis, which allows for stacking multiple printers on top of each other. It features a build volume of 29.7 x 21 x 20 cm. and ships with an enclosed build platform for increased temperature control. Its maximum printing resolution is 50 microns.',
+        link: 'https://www.3dhubs.com/3d-printers/witbox',
+        image: 'https://www.3dhubs.com/s3fs-public/talk/attachments/witbox.jpg',
+        alt: 'bq-witbox'
+      },
+      {
+        name: 'BQ Witbox 2',
+        description: 'To achieve flawless results, the extruder must always work at a specific distance from the bed The Witbox 2 includes a new inductive sensor that measures this distance with utmost precision.',
+        link: 'https://www.bq.com/en/witbox-2',
+        image: 'https://www.allthat3d.com/wp-content/uploads/2016/08/maxresdefault.jpg',
+        alt: 'bq-witbox-2'
       }
     ];
 

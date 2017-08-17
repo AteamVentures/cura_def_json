@@ -1755,7 +1755,7 @@ If you’re using [Apache HTTP Server](https://httpd.apache.org/), you need to c
     RewriteRule ^ index.html [QSA,L]
 ```
 
-It will get copied to the `build` folder when you run `npm run build`. 
+It will get copied to the `build` folder when you run `npm run build`.
 
 If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow [this Stack Overflow answer](https://stackoverflow.com/a/41249464/4878474).
 
@@ -2144,11 +2144,11 @@ This will only work for locales that have been explicitly imported before.
 You may occasionally find a package you depend on needs compiled or ships code for a non-browser environment.<br>
 This is considered poor practice in the ecosystem and does not have an escape hatch in Create React App.<br>
 <br>
-To resolve this:
-1. Open an issue on the dependency's issue tracker and ask that the package be published pre-compiled (retaining ES6 Modules).
-2. Fork the package and publish a corrected version yourself.
-3. If the dependency is small enough, copy it to your `src/` folder and treat it as application code.
 
-## Something Missing?
+### General React Notes
 
-If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+* JSX produced React 'elements'
+
+* You can embed any javascript expression in JSX by putting it in curly braces
+
+* Upon compilation, JSX expressions become regular JavaScript options

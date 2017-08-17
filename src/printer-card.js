@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import json101hero from './definitions/101Hero.def.json';
+
 
 export default class PrinterCard extends Component {
   render() {
@@ -11,6 +13,18 @@ export default class PrinterCard extends Component {
 
     return (
       <div className="col s12 m4">
+
+        <div id={this.props.alt} className="modal bottom-sheet">
+          <div className="modal-content">
+            <h4>{this.props.name}</h4>
+            <p>{this.props.description}</p>
+            <p><pre>{JSON.stringify(json101hero, null, 2) }</pre></p>
+          </div>
+          <div className="modal-footer">
+            <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+
         <div className="card">
           <div className="card-image" style={styles.hideOverflow}>
             <img src={this.props.image} alt={this.props.alt} style={styles.printerImage} />
@@ -18,7 +32,7 @@ export default class PrinterCard extends Component {
           <div className="card-content">
             <a href={this.props.link} className="card-title">{this.props.name}</a>
             <p style={styles.printerDescription}>{this.props.description}</p>
-            <button className="waves-effect waves-light btn" style={styles.definitionButton}>see definition</button>
+            <a className="waves-effect waves-light btn modal-trigger" href={'#' + this.props.alt} style={styles.definitionButton}>see definition</a>
           </div>
         </div>
       </div>
