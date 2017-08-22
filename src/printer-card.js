@@ -64,6 +64,11 @@ import jsonVertexK8400 from './definitions/vertex_k8400.def.json';
 import jsonZone3d from './definitions/zone3d_printer.def.json';
 
 export default class PrinterCard extends Component {
+  constructor(props) {
+    super(props)
+    this.copyContentToClipboard = this.copyContentToClipboard.bind(this);
+  }
+
   renderJson(definition) {
     let jsonDict = {
       '101Hero.def.json': json101hero,
@@ -133,11 +138,16 @@ export default class PrinterCard extends Component {
     return jsonDict[definition];
   }
 
+  copyContentToClipboard(e) {
+    let text = e.target.getAttribute("data-column")
+    window.prompt("Copy to clipboard: Ctrl+C, Enter", text)
+  }
+
   renderJsonTableRow(attributeName, attributeValue) {
     return (
       <tr key={(Math.random()).toString()}>
         <td className="blue-text text-darken-2">{attributeName}</td>
-        <td>{attributeValue}</td>
+        <td data-column={attributeValue} onClick={this.copyContentToClipboard}>{attributeValue}</td>
       </tr>
     );
   }
