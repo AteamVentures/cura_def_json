@@ -206,7 +206,7 @@ export default class PrinterCard extends Component<void> {
     if (target) {
       return target[attributeName]
     } else {
-      return '{"No attributes available": "No attributes available"}'
+      return ''
     }
   }
 
@@ -238,7 +238,7 @@ export default class PrinterCard extends Component<void> {
             <h4>{this.textAttributeOrBlank(this.props, 'name')}</h4>
             <p>{this.textAttributeOrBlank(this.props, 'description')}</p>
             <pre>
-              { JSON.stringify(this.renderJson(this.props.definition), null, 2) }
+              { JSON.stringify(this.renderJson(this.jsonAttributeOrBlank(this.props, 'definition')), null, 2) }
             </pre>
           </div>
           <div className="modal-footer">
