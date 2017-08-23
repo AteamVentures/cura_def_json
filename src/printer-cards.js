@@ -1,10 +1,19 @@
+/* @flow */
+
 import React, { Component } from 'react';
 import PrinterCard from './printer-card';
 
-export default class PrinterCards extends Component {
-
+export default class PrinterCards extends Component<void> {
   render() {
-    let printers = [
+    type Printer = {
+      name: string,
+      description: string,
+      link: string,
+      image: string,
+      alt: string,
+      definition: string
+    }
+    let printers: Array<Printer> = [
       {
         name: '101Hero',
         description: '3D Printing for work, home and play. 101Hero gives everyone simple, affordable, and dependable 3D printing.',
@@ -513,7 +522,7 @@ export default class PrinterCards extends Component {
 
     return (
       <div className="row">
-        {printers.map(function(printer, i) {
+        {printers.map(function(printer: Printer, i: number) {
           return <PrinterCard
             name={printer.name}
             description={printer.description || 'No description available yet.'}

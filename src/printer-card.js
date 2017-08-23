@@ -1,4 +1,7 @@
+/* @flow */
+
 import React, { Component } from 'react';
+
 import json101hero from './definitions/101Hero.def.json';
 import jsonAbaxPri3 from './definitions/abax_pri3.def.json';
 import jsonAbaxPri5 from './definitions/abax_pri5.def.json';
@@ -63,13 +66,13 @@ import jsonVertexK8400Dual from './definitions/vertex_k8400_dual.def.json';
 import jsonVertexK8400 from './definitions/vertex_k8400.def.json';
 import jsonZone3d from './definitions/zone3d_printer.def.json';
 
-export default class PrinterCard extends Component {
-  constructor(props) {
+export default class PrinterCard extends Component<void> {
+  constructor(props: any) {
     super(props)
-    this.copyContentToClipboard = this.copyContentToClipboard.bind(this);
+    // this.copyContentToClipboard = this.copyContentToClipboard.bind(this);
   }
 
-  renderJson(definition) {
+  renderJson(definition: string): any {
     let jsonDict = {
       '101Hero.def.json': json101hero,
       'abax_pri3.def.json': jsonAbaxPri3,
@@ -138,12 +141,12 @@ export default class PrinterCard extends Component {
     return jsonDict[definition];
   }
 
-  copyContentToClipboard(e) {
+  copyContentToClipboard(e: any): void {
     let text = e.target.getAttribute("data-column")
     window.prompt("Copy to clipboard: Ctrl+C, Enter", text)
   }
 
-  renderJsonTableRow(attributeName, attributeValue) {
+  renderJsonTableRow(attributeName: string, attributeValue: string): any {
     return (
       <tr key={(Math.random()).toString()}>
         <td className="blue-text text-darken-2">{attributeName}</td>
@@ -152,7 +155,7 @@ export default class PrinterCard extends Component {
     );
   }
 
-  traverseJson(tableRows, defJson, keyPrefix = '') {
+  traverseJson(tableRows: Array<any>, defJson: any, keyPrefix: string = '') {
     for (var key in defJson) {
       if (defJson.hasOwnProperty(key)) {
         if (typeof defJson[key] === 'object') {
@@ -172,7 +175,7 @@ export default class PrinterCard extends Component {
     }
   }
 
-  renderJsonTable(defJson) {
+  renderJsonTable(defJson: any): any {
     let tableRows = [];
     this.traverseJson(tableRows, defJson);
 
@@ -191,6 +194,22 @@ export default class PrinterCard extends Component {
     );
   }
 
+  textAttributeOrBlank(target: ?{}, attributeName: string): string {
+    if (target) {
+      return target[attributeName]
+    } else {
+      return ''
+    }
+  }
+
+  jsonAttributeOrBlank(target: ?{}, attributeName: string): string {
+    if (target) {
+      return target[attributeName]
+    } else {
+      return '{"No attributes available": "No attributes available"}'
+    }
+  }
+
   render() {
     let styles = {
       hideOverflow: {overflow: 'hidden'},
@@ -203,22 +222,21 @@ export default class PrinterCard extends Component {
     return (
       <div className="col s12 m4">
 
-        <div id={'formatted-' + this.props.alt} className="modal bottom-sheet">
+        <div id={'formatted-' + this.textAttributeOrBlank(this.props, 'alt')} className="modal bottom-sheet">
           <div className="modal-content">
-            <h4>{this.props.name}</h4>
-            <p>{this.props.description}</p>
-            {this.renderJsonTable(this.renderJson(this.props.definition))}
-
+            <h4>{this.textAttributeOrBlank(this.props, 'name')}</h4>
+            <p>{this.textAttributeOrBlank(this.props, 'description')}</p>
+            {this.renderJsonTable(this.renderJson(this.jsonAttributeOrBlank(this.props, 'definition')))}
           </div>
           <div className="modal-footer">
             <a href="#!" className="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
           </div>
         </div>
 
-        <div id={this.props.alt} className="modal bottom-sheet">
+        <div id={this.textAttributeOrBlank(this.props, 'alt')} className="modal bottom-sheet">
           <div className="modal-content">
-            <h4>{this.props.name}</h4>
-            <p>{this.props.description}</p>
+            <h4>{this.textAttributeOrBlank(this.props, 'name')}</h4>
+            <p>{this.textAttributeOrBlank(this.props, 'description')}</p>
             <pre>
               { JSON.stringify(this.renderJson(this.props.definition), null, 2) }
             </pre>
@@ -230,13 +248,13 @@ export default class PrinterCard extends Component {
 
         <div className="card">
           <div className="card-image" style={styles.hideOverflow}>
-            <img src={this.props.image} alt={this.props.alt} style={styles.printerImage} />
+            <img src={this.textAttributeOrBlank(this.props, 'image')} alt={this.textAttributeOrBlank(this.props, 'alt')} style={styles.printerImage} />
           </div>
           <div className="card-content">
-            <a href={this.props.link} className="card-title">{this.props.name}</a>
-            <p style={styles.printerDescription}>{this.props.description}</p>
-            <a className="waves-effect waves-light btn modal-trigger blue" href={'#formatted-' + this.props.alt} style={styles.definitionButton}>formatted definition</a>
-            <a className="waves-effect waves-light btn modal-trigger" href={'#' + this.props.alt} style={styles.definitionButtonLower}>raw definition</a>
+            <a href={this.textAttributeOrBlank(this.props, 'link')} className="card-title">{this.textAttributeOrBlank(this.props, 'name')}</a>
+            <p style={styles.printerDescription}>{this.textAttributeOrBlank(this.props, 'description')}</p>
+            <a className="waves-effect waves-light btn modal-trigger blue" href={'#formatted-' + this.textAttributeOrBlank(this.props, 'alt')} style={styles.definitionButton}>formatted definition</a>
+            <a className="waves-effect waves-light btn modal-trigger" href={'#' + this.textAttributeOrBlank(this.props, 'alt')} style={styles.definitionButtonLower}>raw definition</a>
           </div>
         </div>
       </div>
