@@ -12,7 +12,7 @@ export default class PrinterCards extends Component<void> {
       image: string,
       alt: string,
       definition: string
-    }
+    };
     let printers: Array<Printer> = [
       {
         name: '101Hero',

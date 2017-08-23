@@ -66,9 +66,9 @@ import jsonVertexK8400Dual from './definitions/vertex_k8400_dual.def.json';
 import jsonVertexK8400 from './definitions/vertex_k8400.def.json';
 import jsonZone3d from './definitions/zone3d_printer.def.json';
 
-export default class PrinterCard extends Component<void> {
+export default class PrinterCard extends Component<any> {
   constructor(props: any) {
-    super(props)
+    super(props);
     // this.copyContentToClipboard = this.copyContentToClipboard.bind(this);
   }
 
@@ -178,7 +178,6 @@ export default class PrinterCard extends Component<void> {
   renderJsonTable(defJson: any): any {
     let tableRows = [];
     this.traverseJson(tableRows, defJson);
-
     return (
       <table>
         <thead>
@@ -196,17 +195,17 @@ export default class PrinterCard extends Component<void> {
 
   textAttributeOrBlank(target: ?{}, attributeName: string): string {
     if (target) {
-      return target[attributeName]
+      return target[attributeName];
     } else {
-      return ''
+      return '';
     }
   }
 
   jsonAttributeOrBlank(target: ?{}, attributeName: string): string {
     if (target) {
-      return target[attributeName]
+      return target[attributeName];
     } else {
-      return ''
+      return '';
     }
   }
 
@@ -251,7 +250,7 @@ export default class PrinterCard extends Component<void> {
             <img src={this.textAttributeOrBlank(this.props, 'image')} alt={this.textAttributeOrBlank(this.props, 'alt')} style={styles.printerImage} />
           </div>
           <div className="card-content">
-            <a href={this.textAttributeOrBlank(this.props, 'link')} className="card-title">{this.textAttributeOrBlank(this.props, 'name')}</a>
+            <a style={styles.printerDescription} href={this.textAttributeOrBlank(this.props, 'link')} className="card-title">{this.textAttributeOrBlank(this.props, 'name')}</a>
             <p style={styles.printerDescription}>{this.textAttributeOrBlank(this.props, 'description')}</p>
             <a className="waves-effect waves-light btn modal-trigger blue" href={'#formatted-' + this.textAttributeOrBlank(this.props, 'alt')} style={styles.definitionButton}>formatted definition</a>
             <a className="waves-effect waves-light btn modal-trigger" href={'#' + this.textAttributeOrBlank(this.props, 'alt')} style={styles.definitionButtonLower}>raw definition</a>
