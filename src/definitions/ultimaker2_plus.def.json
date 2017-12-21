@@ -1,12 +1,10 @@
 {
-    "id": "ultimaker2_plus",
     "version": 2,
     "name": "Ultimaker 2+",
     "inherits": "ultimaker2",
     "metadata": {
         "author": "Ultimaker",
-        "manufacturer": "Ultimaker",
-        "category": "Ultimaker",
+        "manufacturer": "Ultimaker B.V.",
         "weight": 1,
         "file_formats": "text/x-gcode",
         "platform": "ultimaker2_platform.obj",
@@ -16,6 +14,7 @@
         "has_materials": true,
         "has_machine_materials": true,
         "has_machine_quality": true,
+        "first_start_actions": [],
         "supported_actions":["UpgradeFirmware"]
     },
 

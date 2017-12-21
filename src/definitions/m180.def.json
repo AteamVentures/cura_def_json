@@ -1,5 +1,4 @@
 {
-    "id": "m180",
     "version": 2,
     "name": "Malyan M180",
     "inherits": "fdmprinter",
@@ -7,7 +6,6 @@
         "visible": true,
         "author": "Ruben Dulek",
         "manufacturer": "Malyan",
-        "category": "Other",
         "file_formats": "application/x3g"
     },
 

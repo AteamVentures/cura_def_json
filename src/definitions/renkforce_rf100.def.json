@@ -1,11 +1,9 @@
 {
-    "id": "RF100",
     "version": 2,
     "name": "Renkforce RF100",
     "inherits": "fdmprinter",
     "metadata": {
         "author": "Simon Peter (based on RF100.ini by Conrad Electronic SE)",
-        "category": "Other",
         "file_formats": "text/x-gcode",
         "manufacturer": "Renkforce",
         "visible": true
@@ -76,7 +74,7 @@
             "value": "100"
         },
         "material_bed_temperature": {
-            "visible": "False"
+            "enabled": false
         },
         "material_diameter": {
             "value": "1.75"
