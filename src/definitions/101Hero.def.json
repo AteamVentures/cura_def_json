@@ -12,16 +12,46 @@
     },
 
     "overrides": {
-        "machine_name": { "default_value": "101Hero" },
-        "machine_shape": { "default_value": "elliptic"},
-        "machine_heated_bed": { "default_value": false },
-        "machine_width": { "default_value": 149.86 },
-        "machine_depth": { "default_value": 149.86 },
-        "machine_height": { "default_value": 99.822 },
-        "machine_center_is_zero": { "default_value": true },
-        "layer_height": { "default_value": 0.2 },
-        "machine_nozzle_size": { "default_value": 0.4 },
-        "material_diameter": { "default_value": 1.75 },
+        "machine_name": {
+            "default_value": "101Hero",
+            "value": "101Hero"
+        },
+        "machine_shape": {
+            "default_value": "elliptic",
+            "value": "elliptic"
+        },
+        "machine_heated_bed": {
+            "default_value": false,
+            "value": false
+        },
+        "machine_width": {
+            "default_value": 149.86,
+            "value": 149.86
+        },
+        "machine_depth": {
+            "default_value": 149.86,
+            "value": 149.86
+        },
+        "machine_height": {
+            "default_value": 99.822,
+            "value": 99.822
+        },
+        "machine_center_is_zero": {
+            "default_value": true,
+            "value": true
+        },
+        "layer_height": {
+            "default_value": 0.2,
+            "value": 0.2
+        },
+        "machine_nozzle_size": {
+            "default_value": 0.4,
+            "value": 0.4
+        },
+        "material_diameter": {
+            "default_value": 1.75,
+            "value": 1.75
+        },
         "machine_head_with_fans_polygon": {
             "default_value": [
                 [ 0, 0 ],
