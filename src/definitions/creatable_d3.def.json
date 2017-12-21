@@ -2,7 +2,7 @@
     "id": "creatable_d3",
     "version": 1,
     "name": "CREATABLE D3",
-    "inherits": "fdmprinter",
+    "inherits": "custom",
     "metadata": {
         "visible": true,
         "author": "Joseph Choi",
@@ -12,25 +12,40 @@
     },
     "overrides": {
         "machine_heated_bed": {
-            "default_value": true
+            "default_value": true,
+            "value": true
         },
         "machine_width": {
-            "default_value": 250
+            "default_value": 250,
+            "value": 250
         },
         "machine_height": {
-            "default_value": 200
+            "default_value": 200,
+            "value": 200
         },
         "machine_depth": {
-            "default_value": 250
+            "default_value": 250,
+            "value": 250
         },
         "machine_center_is_zero": {
-            "default_value": true
+            "default_value": true,
+            "value": true
         },
         "machine_nozzle_size": {
-            "default_value": 0.4
+            "default_value": 0.4,
+            "value": 0.4
+        },
+        "wall_line_width_0": {
+          "default_value": 0.4,
+          "value": 0.4
+        },
+        "wall_line_width_x": {
+          "default_value": 0.4,
+          "value": 0.4
         },
         "material_diameter": {
-            "default_value": 1.75
+            "default_value": 1.75,
+            "value": 1.75
         },
         "machine_gcode_flavor": {
             "default_value": "RepRap (Marlin/Sprinter)"
@@ -42,7 +57,8 @@
             "default_value": "M400\nG28\nM104 S0 ; hotend off\nM140 S0 ; heated bed heater off (if you have it)\nM107 ; fans off\nG92 E0 ; set extruder to 0\nG1 E-32 F300 ; retract a bit to relieve pressure\nM84 ; steppers off\nG90 ; absolute positioning"
         },
         "machine_shape": {
-            "default_value": "elliptic"
+            "default_value": "elliptic",
+            "value": "elliptic"
         }
     }
 }

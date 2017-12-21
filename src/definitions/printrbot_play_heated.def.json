@@ -13,6 +13,9 @@
     "overrides": {
         "machine_name": { "default_value": "Printrbot Play (Heated Bed)" },
         "machine_heated_bed": { "default_value": true },
+        "machine_center_is_zero": {
+            "default_value": true
+        },
         "machine_depth": { "default_value": 203 }
     }
 }
