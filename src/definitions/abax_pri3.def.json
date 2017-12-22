@@ -34,8 +34,8 @@
             "value": false
         },
         "machine_center_is_zero": {
-            "default_value": false,
-            "value": false
+            "default_value": true,
+            "value": true
         },
         "machine_gcode_flavor": {
             "default_value": "RepRap",
