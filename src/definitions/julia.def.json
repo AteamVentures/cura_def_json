@@ -7,9 +7,12 @@
         "author": "Ultimaker",
         "manufacturer": "Fracktal",
         "file_formats": "text/x-gcode",
-        "platform_offset": [ 0, 0, 0]
+        "platform_offset": [
+            0,
+            0,
+            0
+        ]
     },
-
     "overrides": {
         "machine_start_gcode": {
             "default_value": "\";Basic settings: Layer height: {layer_height} Walls: {wall_thickness} Fill: {infill_sparse_density}\n;metric values\nM107\nG28\nG29\nG90 ;absolute positioning\nG92 E0; reset extruder distance\nG1 Z5 F300 ;move nozzle up 5mm for safe homing\nG1 X0 Y0 Z0 F5000; move nozzle to home\nM300 S600P200\nM300 S800 P200\nM190 S{material_bed_temperature} ;Uncomment to add your own bed temperature line\nM109 S{material_print_temperature} ;Uncomment to add your own temperature line\nM82 ;set extruder to absolute mode\nM107 ;start with the fan off\nG1 Z15.0 F{speed_travel} ;move the platform down 15mm\nG92 E0 ;zero the extruded length\nG1 F200 E3 ;extrude 3mm of feed stock\nG92 E0 ;zero the extruded length again\nG1 F{speed_travel}\n;Put printing message on LCD screen\nM117 ; Printing...\"",

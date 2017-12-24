@@ -116,17 +116,23 @@
             "default_value": false
         },
         "print_sequence": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "support_enable": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "machine_nozzle_temp_enabled": {
             "value": false,
             "default_value": false
         },
         "material_bed_temperature": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "material_diameter": {
             "enabled": false,
@@ -149,16 +155,24 @@
             "default_value": "off"
         },
         "retract_at_layer_change": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "cool_min_layer_time_fan_speed_max": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "cool_fan_full_at_height": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         },
         "cool_fan_full_layer": {
-            "enabled": false
+            "enabled": false,
+            "value": false,
+            "default_value": false
         }
     }
 }

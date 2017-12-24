@@ -8,9 +8,12 @@
         "author": "BQ",
         "file_formats": "text/x-code",
         "platform": "bq_hephestos_platform.stl",
-        "platform_offset": [ 0, -82, 0]
+        "platform_offset": [
+            0,
+            -82,
+            0
+        ]
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "BQ Prusa i3 Hephestos XL",

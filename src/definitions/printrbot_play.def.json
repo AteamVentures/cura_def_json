@@ -9,7 +9,6 @@
         "file_formats": "text/x-gcode",
         "platform": "printrbot_play.stl"
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "Printrbot Play",
@@ -64,8 +63,42 @@
             "value": "skirt"
         },
         "machine_head_with_fans_polygon": {
-            "default_value": [[-32,999],[37,999],[37,-32],[-32,-32]],
-            "value": [[-32,999],[37,999],[37,-32],[-32,-32]]
+            "default_value": [
+                [
+                    -32,
+                    999
+                ],
+                [
+                    37,
+                    999
+                ],
+                [
+                    37,
+                    -32
+                ],
+                [
+                    -32,
+                    -32
+                ]
+            ],
+            "value": [
+                [
+                    -32,
+                    999
+                ],
+                [
+                    37,
+                    999
+                ],
+                [
+                    37,
+                    -32
+                ],
+                [
+                    -32,
+                    -32
+                ]
+            ]
         },
         "gantry_height": {
             "default_value": 55,
@@ -116,8 +149,8 @@
             "value": 0.4
         },
         "machine_max_jerk_e": {
-            "default_value": 5.0,
-            "value": 5.0
+            "default_value": 5,
+            "value": 5
         },
         "machine_gcode_flavor": {
             "default_value": "RepRap (Marlin/Sprinter)",

@@ -133,14 +133,16 @@
             "value": 178
         },
         "prime_tower_wipe_enabled": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "prime_tower_min_volume": {
             "default_value": 50,
             "value": 50
         },
         "dual_pre_wipe": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "prime_blob_enable": {
             "enabled": true

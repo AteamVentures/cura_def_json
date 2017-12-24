@@ -7,15 +7,17 @@
         "author": "BEEVERYCREATIVE",
         "manufacturer": "BEEVERYCREATIVE",
         "platform": "BEEVERYCREATIVE-helloBEEprusa.stl",
-        "platform_offset": [-226, -75, -196],
+        "platform_offset": [
+            -226,
+            -75,
+            -196
+        ],
         "file_formats": "text/x-gcode",
-        "machine_extruder_trains":
-        {
+        "machine_extruder_trains": {
             "0": "hBp_extruder_left",
             "1": "hBp_extruder_right"
         }
     },
-
     "overrides": {
         "machine_extruder_count": {
             "default_value": 2,
@@ -146,8 +148,8 @@
             "value": 0.4
         },
         "retraction_speed": {
-            "default_value": 15.0,
-            "value": 15.0
+            "default_value": 15,
+            "value": 15
         },
         "retraction_amount": {
             "default_value": 1.5,

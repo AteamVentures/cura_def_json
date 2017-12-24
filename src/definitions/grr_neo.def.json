@@ -10,7 +10,6 @@
         "icon": "icon_ultimaker.png",
         "platform": "grr_neo_platform.stl"
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "German RepRap Neo",
@@ -37,8 +36,42 @@
             "value": 0.5
         },
         "machine_head_polygon": {
-            "default_value": [[-75, -18],[-75, 35],[18, 35],[18, -18]],
-            "value": [[-75, -18],[-75, 35],[18, 35],[18, -18]]
+            "default_value": [
+                [
+                    -75,
+                    -18
+                ],
+                [
+                    -75,
+                    35
+                ],
+                [
+                    18,
+                    35
+                ],
+                [
+                    18,
+                    -18
+                ]
+            ],
+            "value": [
+                [
+                    -75,
+                    -18
+                ],
+                [
+                    -75,
+                    35
+                ],
+                [
+                    18,
+                    35
+                ],
+                [
+                    18,
+                    -18
+                ]
+            ]
         },
         "gantry_height": {
             "default_value": 55,

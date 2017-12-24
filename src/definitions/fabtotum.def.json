@@ -47,7 +47,8 @@
             "value": 234
         },
         "machine_center_is_zero": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_heated_bed": {
             "default_value": true,
@@ -144,7 +145,8 @@
             "value": 1
         },
         "retraction_hop_enabled": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "material_diameter": {
             "default_value": 1.75,

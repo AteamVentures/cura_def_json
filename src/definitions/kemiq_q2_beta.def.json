@@ -33,7 +33,8 @@
             "value": true
         },
         "machine_center_is_zero": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "material_diameter": {
             "default_value": 1.75,

@@ -7,7 +7,11 @@
         "author": "Deltaprintr",
         "manufacturer": "Deltaprintr",
         "file_formats": "text/x-gcode",
-        "platform_offset": [0, 0, 0],
+        "platform_offset": [
+            0,
+            0,
+            0
+        ],
         "platform": ""
     },
     "overrides": {
@@ -103,7 +107,7 @@
             "default_value": true,
             "value": true
         },
-        "brim_width": { 
+        "brim_width": {
             "default_value": 5,
             "value": 5
         },

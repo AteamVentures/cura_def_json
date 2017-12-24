@@ -9,9 +9,12 @@
         "file_formats": "text/x-gcode",
         "icon": "icon_ultimaker2",
         "platform": "kossel_platform.stl",
-        "platform_offset": [0, -0.25, 0]
+        "platform_offset": [
+            0,
+            -0.25,
+            0
+        ]
     },
-
     "overrides": {
         "machine_heated_bed": {
             "default_value": true,

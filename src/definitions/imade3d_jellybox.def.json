@@ -89,7 +89,8 @@
             "value": true
         },
         "machine_center_is_zero": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_gcode_flavor": {
             "default_value": "RepRap (Marlin/Sprinter)",

@@ -8,9 +8,12 @@
         "manufacturer": "BQ",
         "file_formats": "text/x-gcode",
         "platform": "bq_witbox_platform.stl",
-        "platform_offset": [ 0, -145, -38]
+        "platform_offset": [
+            0,
+            -145,
+            -38
+        ]
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "BQ Witbox",
@@ -108,6 +111,5 @@
             "default_value": true,
             "value": true
         }
-
     }
 }

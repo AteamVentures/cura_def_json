@@ -29,7 +29,8 @@
             "value": 211
         },
         "machine_center_is_zero": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_nozzle_size": {
             "default_value": 0.4,

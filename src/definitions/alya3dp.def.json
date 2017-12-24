@@ -8,7 +8,6 @@
         "manufacturer": "ALYA",
         "file_formats": "text/x-gcode"
     },
-
     "overrides": {
         "machine_width": {
             "default_value": 100,
@@ -32,16 +31,40 @@
         },
         "machine_head_polygon": {
             "default_value": [
-                [75, 18],
-                [18, 18],
-                [18, 35],
-                [75, 35]
+                [
+                    75,
+                    18
+                ],
+                [
+                    18,
+                    18
+                ],
+                [
+                    18,
+                    35
+                ],
+                [
+                    75,
+                    35
+                ]
             ],
             "value": [
-                [75, 18],
-                [18, 18],
-                [18, 35],
-                [75, 35]
+                [
+                    75,
+                    18
+                ],
+                [
+                    18,
+                    18
+                ],
+                [
+                    18,
+                    35
+                ],
+                [
+                    75,
+                    35
+                ]
             ]
         },
         "gantry_height": {

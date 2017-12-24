@@ -100,6 +100,7 @@ const fileNames = [
   'printrbot_simple_extended'
 ]
 
-for (let fileName in fileNames) {
+for (let fileName of fileNames) {
+  console.log(fileName)
   parseFile(fileName)
 }

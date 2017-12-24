@@ -30,7 +30,8 @@
             "value": 200
         },
         "machine_heated_bed": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_center_is_zero": {
             "default_value": true,

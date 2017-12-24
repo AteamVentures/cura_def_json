@@ -10,7 +10,6 @@
         "icon": "icon_ultimaker2.png",
         "platform": "makerstarter_platform.stl"
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "3DMaker Starter",
@@ -102,7 +101,7 @@
         },
         "speed_topbottom": {
             "default_value": 50,
-            "default_value": 50
+            "value": 50
         },
         "speed_support": {
             "default_value": 50,

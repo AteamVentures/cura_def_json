@@ -47,7 +47,8 @@
             "value": true
         },
         "machine_center_is_zero": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_height": {
             "default_value": 150,

@@ -15,7 +15,8 @@
     },
     "overrides": {
         "machine_heated_bed": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "machine_width": {
             "default_value": 190,
@@ -102,7 +103,8 @@
             "value": 1
         },
         "retraction_hop_enabled": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "retraction_amount": {
             "default_value": 4.5,
@@ -173,10 +175,12 @@
             "value": 0.6
         },
         "infill_before_walls": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         },
         "support_use_towers": {
-            "default_value": false
+            "default_value": false,
+            "value": false
         }
     }
 }

@@ -8,9 +8,12 @@
         "manufacturer": "Innovo",
         "file_formats": "text/x-gcode",
         "platform": "inventor_platform.stl",
-        "platform_offset": [-180, -0.25, 160]
+        "platform_offset": [
+            -180,
+            -0.25,
+            160
+        ]
     },
-
     "overrides": {
         "machine_name": {
             "default_value": "Innovo INVENTOR",
@@ -41,8 +44,42 @@
             "value": 0.4
         },
         "machine_head_polygon": {
-            "default_value": [[-43.7, -19.2],[-43.7, 55],[43.7, 55],[43.7, -19.2]],
-            "value": [[-43.7, -19.2],[-43.7, 55],[43.7, 55],[43.7, -19.2]]
+            "default_value": [
+                [
+                    -43.7,
+                    -19.2
+                ],
+                [
+                    -43.7,
+                    55
+                ],
+                [
+                    43.7,
+                    55
+                ],
+                [
+                    43.7,
+                    -19.2
+                ]
+            ],
+            "value": [
+                [
+                    -43.7,
+                    -19.2
+                ],
+                [
+                    -43.7,
+                    55
+                ],
+                [
+                    43.7,
+                    55
+                ],
+                [
+                    43.7,
+                    -19.2
+                ]
+            ]
         },
         "gantry_height": {
             "default_value": 82.3,
@@ -113,8 +150,8 @@
             "value": 150
         },
         "speed_layer_0": {
-            "default_value": 30.0,
-            "value": 30.0,
+            "default_value": 30,
+            "value": 30,
             "minimum_value": 0.1
         }
     }
