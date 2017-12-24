@@ -1,5 +1,5 @@
 const fs = require('fs')
-const printerName = 'builder_premium_medium'
+const printerName = 'builder_premium_small'
 let json = require(`./definitions/${printerName}.def.json`)
 
 const editStartEndGcode = gcode => `"${gcode}"`
