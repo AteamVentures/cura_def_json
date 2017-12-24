@@ -10,117 +10,110 @@
         "has_machine_quality": true,
         "has_materials": false
     },
-
     "overrides": {
         "machine_name": {
-            "default_value": "Moai"
+            "default_value": "Moai",
+            "value": "Moai"
         },
         "machine_width": {
-            "default_value": 130
+            "default_value": 130,
+            "value": 130
         },
         "machine_height": {
-            "default_value": 180
+            "default_value": 180,
+            "value": 180
         },
         "machine_depth": {
-            "default_value": 130
+            "default_value": 130,
+            "value": 130
         },
         "machine_nozzle_size": {
-            "default_value": 0.067
+            "default_value": 0.067,
+            "value": 0.067
         },
-        "machine_head_with_fans_polygon":
-        {
+        "machine_head_with_fans_polygon": {
             "default_value": [
-                [ -20, 10 ],
-                [ -20, -10 ],
-                [ 10, 10 ],
-                [ 10, -10 ]
+                [
+                    -20,
+                    10
+                ],
+                [
+                    -20,
+                    -10
+                ],
+                [
+                    10,
+                    10
+                ],
+                [
+                    10,
+                    -10
+                ]
+            ],
+            "value": [
+                [
+                    -20,
+                    10
+                ],
+                [
+                    -20,
+                    -10
+                ],
+                [
+                    10,
+                    10
+                ],
+                [
+                    10,
+                    -10
+                ]
             ]
         },
         "machine_gcode_flavor": {
-            "default_value": "RepRap (Marlin/Sprinter)"
+            "default_value": "RepRap (Marlin/Sprinter)",
+            "value": "RepRap (Marlin/Sprinter)"
         },
         "machine_start_gcode": {
-            "default_value": "G28 ;Home"
+            "default_value": "\"G28 ;Home\"",
+            "value": "\"G28 ;Home\""
         },
         "machine_end_gcode": {
-            "default_value": "M104 S0\nM140 S0\nG28 X0 Y0\nM84"
-        },
-
-        "line_width": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "wall_line_width": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "wall_line_width_x": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "skin_line_width": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "infill_line_width": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "skirt_brim_line_width": {
-            "minimum_value_warning": "machine_nozzle_size"
-        },
-        "layer_height": {
-            "maximum_value_warning": "0.5",
-            "minimum_value_warning": "0.02"
+            "default_value": "\"M104 S0\nM140 S0\nG28 X0 Y0\nM84\"",
+            "value": "\"M104 S0\nM140 S0\nG28 X0 Y0\nM84\""
         },
         "layer_height_0": {
             "maximum_value_warning": "0.5",
             "minimum_value_warning": "0.02",
-            "value": "0.1"
-        },
-        "top_bottom_thickness": {
-            "minimum_value_warning": "0.1"
-        },
-        "infill_sparse_thickness": {
-            "maximum_value_warning": "0.5"
-        },
-        "speed_print": {
-            "maximum_value_warning": "300"
-        },
-        "speed_infill": {
-            "maximum_value_warning": "300"
-        },
-        "speed_wall": {
-            "maximum_value_warning": "300",
-            "value": "speed_print"
-        },
-        "speed_wall_0": {
-            "maximum_value_warning": "300"
-        },
-        "speed_wall_x": {
-            "maximum_value_warning": "300",
-            "value": "speed_print"
-        },
-        "speed_topbottom": {
-            "maximum_value_warning": "300",
-            "value": "speed_print"
+            "value": 0.1,
+            "default_value": 0.1
         },
         "speed_travel": {
-            "value": "300"
+            "value": 300,
+            "default_value": 300
         },
         "speed_travel_layer_0": {
-            "value": "300"
+            "value": 300,
+            "default_value": 300
         },
         "speed_layer_0": {
-            "value": "5"
+            "value": 5,
+            "default_value": 5
         },
         "speed_slowdown_layers": {
-            "value": "2"
+            "value": 2,
+            "default_value": 2
         },
         "infill_overlap": {
-            "value": "15"
+            "value": 15,
+            "default_value": 15
         },
         "adhesion_type": {
-            "value": "\"none\""
+            "value": "none",
+            "default_value": "none"
         },
-
         "acceleration_enabled": {
-            "value": "False"
+            "value": false,
+            "default_value": false
         },
         "print_sequence": {
             "enabled": false
@@ -129,26 +122,31 @@
             "enabled": false
         },
         "machine_nozzle_temp_enabled": {
-            "value": "False"
+            "value": false,
+            "default_value": false
         },
         "material_bed_temperature": {
             "enabled": false
         },
         "material_diameter": {
             "enabled": false,
-            "value": "1.75"
+            "value": 1.75,
+            "default_value": 1.75
         },
         "cool_fan_enabled": {
             "enabled": false,
-            "value": "False"
+            "value": false,
+            "default_value": false
         },
         "retraction_enable": {
             "enabled": false,
-            "value": "False"
+            "value": false,
+            "default_value": false
         },
         "retraction_combing": {
             "enabled": false,
-            "value": "'off'"
+            "value": "off",
+            "default_value": "off"
         },
         "retract_at_layer_change": {
             "enabled": false
