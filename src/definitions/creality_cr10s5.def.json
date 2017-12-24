@@ -10,13 +10,16 @@
     },
     "overrides": {
         "machine_width": {
-            "default_value": 500
+            "default_value": 500,
+            "value": 500
         },
         "machine_height": {
-            "default_value": 500
+            "default_value": 500,
+            "value": 500
         },
         "machine_depth": {
-            "default_value": 500
+            "default_value": 500,
+            "value": 500
         }
     }
 }
