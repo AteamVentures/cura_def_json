@@ -1,5 +1,5 @@
 const fs = require('fs')
-const printerName = 'creatable_d3'
+const printerName = 'fabtotum'
 let json = require(`./definitions/${printerName}.def.json`)
 
 const editStartEndGcode = gcode => `"${gcode}"`
