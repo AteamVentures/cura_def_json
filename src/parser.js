@@ -97,7 +97,15 @@ const fileNames = [
   'printrbot_play',
   'printrbot_play_heated',
   'printrbot_simple',
-  'printrbot_simple_extended'
+  'printrbot_simple_extended',
+  'prusa_i3_mk2',
+  'prusa_i3_xl',
+  'prusa_i3',
+  'punchtec_connect_xl',
+  'raise3D_N2_dual',
+  'raise3D_N2_plus_dual',
+  'raise3D_N2_plus_single',
+  'raise3D_N2_single'
 ]
 
 for (let fileName of fileNames) {
