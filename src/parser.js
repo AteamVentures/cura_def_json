@@ -21,14 +21,21 @@ const parseFile = fileName => {
     else return value
   }
 
+  const editNestedString = value => {
+    if (typeof value === 'string' && value.indexOf("'") !== -1) return value.replace("'", '')
+    else return value
+  }
+
   for (let key in json.overrides) {
     if (json.overrides[key]['default_value'] && json.overrides[key]['value']) console.log('good to go')
     else if (json.overrides[key]['default_value']) {
+      json.overrides[key]['default_value'] = editNestedString(json.overrides[key]['default_value'])
       json.overrides[key]['default_value'] = editNumericString(json.overrides[key]['default_value'])
       json.overrides[key]['default_value'] = editBooleanString(json.overrides[key]['default_value'])
       json.overrides[key]['default_value'] = checkIfStartEndGcode(key, json, 'default_value')
       json.overrides[key]['value'] = json.overrides[key]['default_value']
     } else if (json.overrides[key]['value']) {
+      json.overrides[key]['value'] = editNestedString(json.overrides[key]['value'])
       json.overrides[key]['value'] = editNumericString(json.overrides[key]['value'])
       json.overrides[key]['value'] = editBooleanString(json.overrides[key]['value'])
       json.overrides[key]['value'] = checkIfStartEndGcode(key, json, 'value')
@@ -113,7 +120,10 @@ const fileNames = [
   'raise3D_N2_plus_dual',
   'raise3D_N2_plus_single',
   'raise3D_N2_single',
-  'renkforce_rf100'
+  'renkforce_rf100',
+  'rigid3d_3rdgen',
+  'rigid3d_hobby',
+  'rigid3d_zero'
 ]
 
 for (let fileName of fileNames) {
