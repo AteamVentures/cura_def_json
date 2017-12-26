@@ -22,7 +22,7 @@ const parseFile = fileName => {
   }
 
   const editNestedString = value => {
-    if (typeof value === 'string' && value.indexOf("'") !== -1) return value.replace("'", '')
+    if (typeof value === 'string' && value.indexOf("'") !== -1) return value.replace(/'/g, '')
     else return value
   }
 
@@ -123,7 +123,8 @@ const fileNames = [
   'renkforce_rf100',
   'rigid3d_3rdgen',
   'rigid3d_hobby',
-  'rigid3d_zero'
+  'rigid3d_zero',
+  'rigid3d_zero2'
 ]
 
 for (let fileName of fileNames) {
