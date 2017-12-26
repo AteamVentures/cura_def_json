@@ -35,7 +35,8 @@
             "value": 0.4
         },
         "gantry_height": {
-            "default_value": 0
+            "default_value": 0,
+            "value": 0
         },
         "machine_gcode_flavor": {
             "default_value": "RepRap (Marlin/Sprinter)",
@@ -103,7 +104,8 @@
             "value": false
         },
         "cool_fan_speed": {
-            "default_value": 0
+            "default_value": 0,
+            "value": 0
         },
         "skirt_line_count": {
             "default_value": 3,

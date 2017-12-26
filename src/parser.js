@@ -49,6 +49,14 @@ const parseFile = fileName => {
     } else if (json.overrides[key]['value'] === false) {
       json.overrides[key]['default_value'] = false
     }
+
+    if (json.overrides[key]['default_value'] === 0 && json.overrides[key]['value'] === 0) {
+      console.log('a false value was found and is good to go')
+    } else if (json.overrides[key]['default_value'] === 0) {
+      json.overrides[key]['value'] = 0
+    } else if (json.overrides[key]['value'] === 0) {
+      json.overrides[key]['default_value'] = 0
+    }
   }
 
   const jsonStr = JSON.stringify(json, null, 4)
@@ -130,7 +138,23 @@ const fileNames = [
   'rigidbot',
   'robo_3d_r1',
   'tam',
-  'tevo_tarantula'
+  'tevo_tarantula',
+  'ultimaker_original_dual',
+  'ultimaker_original_plus',
+  'ultimaker_original',
+  'ultimaker',
+  'ultimaker2_extended_plus',
+  'ultimaker2_extended',
+  'ultimaker2_go',
+  'ultimaker2_plus',
+  'ultimaker2',
+  'ultimaker3_extended',
+  'ultimaker3',
+  'uniqbot_one',
+  'vertex_delta_k8800',
+  'vertex_k8400_dual',
+  'vertex_k8400',
+  'zone3d_printer'
 ]
 
 for (let fileName of fileNames) {

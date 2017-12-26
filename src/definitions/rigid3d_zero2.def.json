@@ -163,7 +163,8 @@
             "value": 50
         },
         "cool_fan_speed_min": {
-            "default_value": 0
+            "default_value": 0,
+            "value": 0
         },
         "cool_fan_full_at_height": {
             "default_value": 1,

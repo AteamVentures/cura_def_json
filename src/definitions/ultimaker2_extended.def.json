@@ -12,11 +12,14 @@
         "platform": "ultimaker2_platform.obj",
         "platform_texture": "Ultimaker2Extendedbackplate.png"
     },
-
     "overrides": {
-        "machine_name": { "default_value": "Ultimaker 2 Extended" },
+        "machine_name": {
+            "default_value": "Ultimaker 2 Extended",
+            "value": "Ultimaker 2 Extended"
+        },
         "machine_height": {
-            "default_value": 305
+            "default_value": 305,
+            "value": 305
         }
     }
 }

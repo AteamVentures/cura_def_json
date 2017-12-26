@@ -10,17 +10,28 @@
         "icon": "icon_ultimaker.png",
         "platform": "ultimaker2_platform.obj",
         "platform_texture": "UltimakerPlusbackplate.png",
-        "first_start_actions": ["UMOCheckup", "BedLevel"],
-        "supported_actions": ["UMOCheckup", "BedLevel", "UpgradeFirmware"]
+        "first_start_actions": [
+            "UMOCheckup",
+            "BedLevel"
+        ],
+        "supported_actions": [
+            "UMOCheckup",
+            "BedLevel",
+            "UpgradeFirmware"
+        ]
     },
-
     "overrides": {
-        "machine_name": { "default_value": "Ultimaker Original+" },
+        "machine_name": {
+            "default_value": "Ultimaker Original+",
+            "value": "Ultimaker Original+"
+        },
         "machine_heated_bed": {
-            "default_value": true
+            "default_value": true,
+            "value": true
         },
         "machine_max_feedrate_z": {
-            "default_value": 30
+            "default_value": 30,
+            "value": 30
         }
     }
 }
