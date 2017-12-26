@@ -124,7 +124,13 @@ const fileNames = [
   'rigid3d_3rdgen',
   'rigid3d_hobby',
   'rigid3d_zero',
-  'rigid3d_zero2'
+  'rigid3d_zero2',
+  'rigid3d',
+  'rigidbot_big',
+  'rigidbot',
+  'robo_3d_r1',
+  'tam',
+  'tevo_tarantula'
 ]
 
 for (let fileName of fileNames) {
